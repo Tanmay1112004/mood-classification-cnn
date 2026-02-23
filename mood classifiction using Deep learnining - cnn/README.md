@@ -1,71 +1,170 @@
-```markdown
-# 🎭 Mood Classification with CNN  
+# 🎭 Mood Classification with CNN
 
-A deep learning project that classifies moods as **Happy 😊** or **Sad 😢** using a **Convolutional Neural Network (CNN)**.  
-Built with **TensorFlow/Keras** and deployed using **Gradio** for an interactive web demo.  
+A deep learning project that classifies facial moods as **Happy 😊** or **Sad 😢** using a **Convolutional Neural Network (CNN)**.
 
----
+Built with **TensorFlow/Keras** and deployed using **Gradio** for an interactive, real-time web interface — making it ideal for interviews, ML portfolios, and practical deep learning demonstrations.
 
-## 🚀 Features  
-- CNN trained on custom Happy/Sad dataset.  
-- Data augmentation for better generalization.  
-- Early stopping & model checkpointing.  
-- Interactive Gradio web app with image upload.  
-- Confidence-based predictions with emoji labels.  
+Simple binary classification. Solid deep learning fundamentals. Clean deployment.
 
 ---
 
-## 📂 Project Structure  
+## 📸 Demo Preview
+
+![Image](https://user-images.githubusercontent.com/1778297/158659207-04015a06-5cad-4ee1-bdbd-291054551540.png)
+
+![Image](https://www.researchgate.net/publication/355166091/figure/fig5/AS%3A1117780430585862%401643511030560/CNN-model-for-Emotion-Recognition.png)
+
+![Image](https://i.sstatic.net/GldqF.jpg)
+
+![Image](https://www.researchgate.net/publication/334311674/figure/fig5/AS%3A963538122194968%401606736798688/Plot-of-the-CNN-models-accuracy-and-loss-on-training-and-validation-steps-considering.png)
+
+---
+
+## 📌 Project Overview
+
+This project demonstrates:
+
+* End-to-end CNN training pipeline
+* Data augmentation for improved generalization
+* Early stopping & checkpointing
+* Model persistence (`.h5` format)
+* Real-time prediction with confidence scores
+* ML model + UI integration
+
+It showcases practical understanding of computer vision, model optimization, and deployment.
+
+---
+
+## ✨ Key Features
+
+* CNN trained on custom Happy/Sad dataset
+* Image augmentation (rotation, zoom, flipping)
+* EarlyStopping & ModelCheckpoint callbacks
+* Gradio-based interactive UI
+* Confidence-based emoji predictions
+* Clean, Colab-compatible workflow
+
+---
+
+## 🧠 Model Architecture
+
+```
+Input Image
+   ↓
+Conv2D → ReLU
+   ↓
+MaxPooling
+   ↓
+Conv2D → ReLU
+   ↓
+MaxPooling
+   ↓
+Conv2D → ReLU
+   ↓
+MaxPooling
+   ↓
+Flatten
+   ↓
+Dense (256) + Dropout (0.4)
+   ↓
+Dense (1, Sigmoid)
 ```
 
+### Training Configuration
+
+| Component         | Value               |
+| ----------------- | ------------------- |
+| Optimizer         | Adam                |
+| Loss              | Binary Crossentropy |
+| Metric            | Accuracy            |
+| Output Activation | Sigmoid             |
+
+The sigmoid layer outputs a probability between 0 and 1, enabling transparent confidence scoring.
+
+---
+
+## 📂 Project Structure
+
+```id="m7kd9x"
 mood-classification-cnn/
-│── data/                         # training & validation dataset (not uploaded here)
-│── mood\_classifier.ipynb         # main notebook (Colab compatible)
-│── best\_mood\_model.h5            # trained model (saved)
-│── README.md                     # project documentation
+│
+├── data/                        # Training & validation dataset (not included)
+├── mood_classifier.ipynb        # Main notebook (Colab compatible)
+├── best_mood_model.h5           # Saved trained model
+└── README.md                    # Documentation
+```
 
-````
-
----
-
-## ⚡ Demo  
-Run in **Google Colab**:  
-1. Mount Google Drive and load dataset.  
-2. Train the CNN or load saved model.  
-3. Launch Gradio interface for predictions.  
+Structured for clarity and scalability.
 
 ---
 
-## 🧠 Model Architecture  
-- Conv2D → MaxPooling (x3)  
-- Dense (256) + Dropout (0.4)  
-- Dense (1, sigmoid)  
+## ⚡ How to Run
 
-Optimizer: `Adam` | Loss: `binary_crossentropy` | Metrics: `accuracy`  
+### Option 1: Google Colab (Recommended)
 
----
-
-## 📊 Results  
-- Training accuracy improves steadily with augmentation.  
-- Confidence scores displayed for both moods.  
+1️⃣ Upload `mood_classifier.ipynb`
+2️⃣ Mount Google Drive
+3️⃣ Train the CNN OR load `best_mood_model.h5`
+4️⃣ Launch Gradio interface
+5️⃣ Upload an image → Get prediction instantly
 
 ---
 
-## 🎨 Gradio App UI  
-- Upload a face image.  
-- Get real-time classification: **😊 Happy / 😢 Sad**.  
-- Confidence scores shown for transparency.  
+### Option 2: Local Setup
 
----
-
-## 🔧 Setup Instructions  
 ```bash
-git clone https://github.com/your-username/mood-classification-cnn.git
+git clone https://github.com/Tanmay1112004/mood-classification-cnn.git
 cd mood-classification-cnn
 pip install -r requirements.txt
-````
+```
 
-Or run directly in **Google Colab** (recommended).
+Or manually install:
+
+```bash
+pip install tensorflow gradio pillow numpy
+```
+
+---
+
+## 📊 Model Performance
+
+* Training accuracy improves consistently with augmentation
+* Dropout reduces overfitting
+* EarlyStopping prevents unnecessary epochs
+* Confidence score provides prediction transparency
+
+Example Output:
+
+* 😊 Happy — 92% Confidence
+* 😢 Sad — 87% Confidence
+
+---
+
+## 🎯 What This Project Demonstrates
+
+* CNN fundamentals
+* Binary image classification
+* Model regularization techniques
+* Callback usage (EarlyStopping, Checkpointing)
+* ML-to-Web deployment pipeline
+* Explainable confidence scoring
+
+This project is strong for:
+
+* Deep Learning internships
+* Computer Vision roles
+* Entry-level ML positions
+* Portfolio demonstrations
+
+---
+
+## 🔮 Future Enhancements
+
+* Multi-class emotion detection (Happy, Sad, Angry, Neutral, etc.)
+* Transfer learning (MobileNet, ResNet)
+* Real-time webcam prediction
+* REST API deployment (FastAPI)
+* Docker containerization
 
 ---
 
@@ -75,12 +174,26 @@ Or run directly in **Google Colab** (recommended).
 * TensorFlow 2.x
 * Gradio
 * Pillow
-* Numpy
-
-Install with:
-
-```bash
-pip install tensorflow gradio pillow numpy
-```
+* NumPy
 
 ---
+
+## 📜 License
+
+MIT License
+
+---
+
+### 👨‍💻 Author
+
+**Tanmay**
+
+Open to opportunities in:
+
+* Deep Learning
+* Computer Vision
+* AI/ML Engineering
+* Applied AI Development
+
+---
+
