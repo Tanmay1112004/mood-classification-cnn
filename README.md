@@ -10,6 +10,8 @@ Simple binary classification. Solid deep learning fundamentals. Clean deployment
 
 ## 📸 Demo Preview
 
+![demo]()
+
 ---
 
 ## 📌 Project Overview
