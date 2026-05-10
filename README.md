@@ -10,18 +10,6 @@ Simple binary classification. Solid deep learning fundamentals. Clean deployment
 
 ## 📸 Demo Preview
 
-![Image](https://github.com/Tanmay1112004/mood-classification-cnn/blob/main/mood%20classifiction%20using%20Deep%20learnining%20-%20cnn/screenshots/Screenshot%202025-08-29%20224150.png)
-
-![Image](https://github.com/Tanmay1112004/mood-classification-cnn/blob/main/mood%20classifiction%20using%20Deep%20learnining%20-%20cnn/screenshots/Screenshot%202025-08-29%20224426.png)
-
-![Image](https://user-images.githubusercontent.com/1778297/158659207-04015a06-5cad-4ee1-bdbd-291054551540.png)
-
-![Image](https://www.researchgate.net/publication/355166091/figure/fig5/AS%3A1117780430585862%401643511030560/CNN-model-for-Emotion-Recognition.png)
-
-![Image](https://i.sstatic.net/GldqF.jpg)
-
-![Image](https://www.researchgate.net/publication/334311674/figure/fig5/AS%3A963538122194968%401606736798688/Plot-of-the-CNN-models-accuracy-and-loss-on-training-and-validation-steps-considering.png)
-
 ---
 
 ## 📌 Project Overview
