@@ -12,6 +12,9 @@ Simple binary classification. Solid deep learning fundamentals. Clean deployment
 
 ![demo](https://github.com/Tanmay1112004/mood-classification-cnn/blob/main/mood%20classifiction%20using%20Deep%20learnining%20-%20cnn/screenshots/Screenshot%202025-08-29%20224150.png)
 
+![demo](https://github.com/Tanmay1112004/mood-classification-cnn/blob/main/mood%20classifiction%20using%20Deep%20learnining%20-%20cnn/screenshots/Screenshot%202025-08-29%20224426.png)
+
+
 ---
 
 ## 📌 Project Overview
