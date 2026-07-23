@@ -194,4 +194,3 @@ Open to opportunities in:
 * Applied AI Development
 
 ---
-
