@@ -111,7 +111,7 @@ Structured for clarity and scalability.
 ### Option 2: Local Setup
 
 ```bash
-git clone https://github.com//mood-classification-cnn.git
+git clone https://github.com/Tanmay1112004/mood-classification-cnn.git
 cd mood-classification-cnn
 pip install -r requirements.txt
 ```
