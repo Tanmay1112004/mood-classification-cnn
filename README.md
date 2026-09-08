@@ -176,12 +176,6 @@ This project is strong for:
 
 ---
 
-## 📜 License
-
-MIT License
-
----
-
 ### 👨‍💻 Author
 
 **Tanmay**
