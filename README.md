@@ -182,6 +182,15 @@ MIT License
 
 ---
 
+### 👨‍💻 Author
 
+**Tanmay**
+
+Open to opportunities in:
+
+* Deep Learning
+* Computer Vision
+* AI/ML Engineering
+* Applied AI Development
 
 ---
